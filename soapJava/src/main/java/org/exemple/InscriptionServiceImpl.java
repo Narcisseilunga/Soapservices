@@ -1,3 +1,7 @@
+package org.exemple;
+
+import org.exemple.InscriptionService;
+
 import javax.jws.WebService;
 import java.util.List;
 

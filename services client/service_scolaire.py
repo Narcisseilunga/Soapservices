@@ -4,7 +4,7 @@ from zeep import Client
 app = Flask(__name__)
 
 # Créer un client pour le service SOAP
-client = Client('http://localhost:8080/inscription?wsdl')
+client = Client('http://localhost:8081/inscription?wsdl')
 
 @app.route('/')
 def index():
