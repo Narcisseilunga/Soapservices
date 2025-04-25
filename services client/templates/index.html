@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service d'inscription</title>
+</head>
+<body>
+    <h1>Service d'inscription</h1>
+    <form action="/creer_compte" method="post">
+        <h2>Créer un compte</h2>
+        <input type="text" name="nom" placeholder="Nom complet" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <button type="submit">Créer</button>
+    </form>
+
+    <form action="/soumettre_demande" method="post">
+        <h2>Soumettre une demande</h2>
+        <input type="text" name="dossier_id" placeholder="ID Dossier" required>
+        <input type="text" name="formulaire" placeholder="Formulaire" required>
+        <input type="text" name="pieces" placeholder="Pièces justificatives" required>
+        <button type="submit">Soumettre</button>
+    </form>
+
+    <form action="/verifier_dossier" method="post">
+        <h2>Vérifier un dossier</h2>
+        <input type="text" name="dossier_id" placeholder="ID Dossier" required>
+        <button type="submit">Vérifier</button>
+    </form>
+
+    <form action="/valider_dossier" method="post">
+        <h2>Valider un dossier</h2>
+        <input type="text" name="dossier_id" placeholder="ID Dossier" required>
+        <button type="submit">Valider</button>
+    </form>
+
+    <form action="/confirmer_admission" method="post">
+        <h2>Confirmer l'admission</h2>
+        <input type="text" name="dossier_id" placeholder="ID Dossier" required>
+        <button type="submit">Confirmer</button>
+    </form>
+
+    <form action="/televerser_recu" method="post">
+        <h2>Téléverser le reçu de paiement</h2>
+        <input type="text" name="dossier_id" placeholder="ID Dossier" required>
+        <input type="text" name="recu" placeholder="Reçu de paiement" required>
+        <button type="submit">Téléverser</button>
+    </form>
+</body>
+</html>

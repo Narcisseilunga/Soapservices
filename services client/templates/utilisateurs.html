@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Utilisateurs</title>
+</head>
+<body>
+    <h1>Utilisateurs</h1>
+    <ul>
+        {% for utilisateur in utilisateurs %}
+            <li>{{ utilisateur }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/">Retour</a>
+</body>
+</html>
